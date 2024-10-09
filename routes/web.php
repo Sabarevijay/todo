@@ -36,6 +36,7 @@ Route::get('/admin/register', [LoginController::class, 'showRegistrationForm'])-
 
 Route::get('/admin/login', [LoginController::class, 'showLoginForm'])->name('admin.login');
 Route::post('/admin/login', [LoginController::class, 'login'])->name('admin.login.post');
+Route::post('/admin/logout', [LoginController::class, 'logout'])->name('admin.logout');
 
 
 Route::get('/tasks', [TaskController::class, 'index'])->name('tasks.index');

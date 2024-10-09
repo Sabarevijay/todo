@@ -10,11 +10,19 @@
 </head>
 <body>
     <div class="container">
+    <form method="POST" action="{{ route('admin.logout') }}" style="float: right;">
+                @csrf
+                <button type="submit" class="btn btn-danger"><b>Logout</b></button>
+            </form>
         <div class="todo-app">
+
             <h1> <img src="{{ asset('images/logo2.png') }}" alt="logo"> BIT</h1>
+            
         
             <h2><img src="{{ asset('images/icon.png') }}" alt="icon"> To-do List </h2>
             <!-- <h2>To-do List </h2> -->
+            
+
 
             
             <form method="POST" action="{{ route('tasks.store') }}">
@@ -65,6 +73,7 @@
             </ul>
 
          @endif
+         
         </div>
     </div>
 </body>

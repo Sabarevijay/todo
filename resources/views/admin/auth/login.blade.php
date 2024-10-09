@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <div class="login-app">
-        <h1><img src="{{ asset('images/logo2.png') }}" alt="logo">Login</h1>
+        <h1><img src="{{ asset('images/logo2.png') }}" alt="logo">Sign In</h1>
         
         @if ($errors->any())
             <div class="alert alert-danger">

@@ -44,5 +44,10 @@ public function register(Request $request)
 
     return redirect()->route('admin.login')->with('success', 'Registration successful. Please login.');
 }
+public function logout()
+    {
+        Auth::logout();
+        return redirect()->route('admin.login'); // Redirect to the login page
+    }
 
 }

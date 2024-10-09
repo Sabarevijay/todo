@@ -10,7 +10,7 @@
     <div class="container">
         <div class="register">
             <div class="login-app">
-            <h1>Admin Registration</h1>
+            <h1>Registration</h1>
 
             @if ($errors->any())
                 <div class="alert alert-danger">
@@ -26,7 +26,7 @@
     @csrf
     <div class="form-group">
         <label for="name"><strong>Name:</strong></label>
-        <input type="text" name="name" id="name" required class="form-control" placeholder="Enter your name">
+        <input type="text" name="name" id="name" required class="form-control" placeholder="Enter your name" size="">
     </div>
 
     <div class="form-group">
@@ -48,10 +48,10 @@
 </form>
 
 
-            <div class="login-link" style="margin-top: 20px; text-align: center;">
+            <!-- <div class="login-link" style="margin-top: 20px; text-align: center;">
                 <strong>Already have an account?</strong>
                 <a href="{{ route('admin.login') }}" class="btn btn-secondary" style="margin-left: 10px;">Login</a>
-            </div>
+            </div> -->
         </div>
         </div>
     </div>
