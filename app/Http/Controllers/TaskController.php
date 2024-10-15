@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Task;
+use App\Models\task;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
