@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <div class="register">
-            <div class="login-app">
+            <div class="login-reg">
             <h1>Registration</h1>
 
             @if ($errors->any())

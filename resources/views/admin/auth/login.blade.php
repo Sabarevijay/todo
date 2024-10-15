@@ -12,6 +12,7 @@
 <body>
     <div class="container">
         <div class="login-app">
+         <h1 class="tit"><img src="{{ asset('images/icon.png') }}" alt="icon"> To-do List</h1>   
         <h1><img src="{{ asset('images/logo2.png') }}" alt="logo">Sign In</h1>
         
         @if ($errors->any())
