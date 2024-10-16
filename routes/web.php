@@ -5,7 +5,7 @@ use App\Http\Controllers\TaskController;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Pages\Dashboard;
 use App\Http\Controllers\Admin\LoginController;
-
+use Illuminate\Routing\Route as RoutingRoute;
 
 Route::get('/', function () {
     return redirect('/admin/login');
@@ -37,6 +37,14 @@ Route::get('/admin/register', [LoginController::class, 'showRegistrationForm'])-
 Route::get('/admin/login', [LoginController::class, 'showLoginForm'])->name('admin.login');
 Route::post('/admin/login', [LoginController::class, 'login'])->name('admin.login.post');
 Route::post('/admin/logout', [LoginController::class, 'logout'])->name('admin.logout');
+
+
+Route::match(['get', 'post'], '/admin/admin', [LoginController::class, 'admin'])->name('admin.admin');
+Route::delete('/admin/user/{id}', [LoginController::class, 'destroy'])->name('admin.user.destroy');
+
+
+// Route::get('/admin/admin', [LoginController::class, 'admin'])->name('admin.admin');
+// Route::get('/users',[LoginController::class, 'user'])->name('admin.admin');
 
 
 Route::get('/tasks', [TaskController::class, 'index'])->name('tasks.index');

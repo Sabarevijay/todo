@@ -10,9 +10,16 @@
 </head>
 <body>
     <div class="container">
+    @if(Auth::user()->name==='Surya')
+    <form method="GET" action="{{ route('admin.admin') }}" style="float: left;">
+                @csrf                
+                <button type="submit" class="panel">Admin</button>
+            </form>
+            @endif
     <form method="POST" action="{{ route('admin.logout') }}" style="float: right;">
                 @csrf
-                <button type="submit" class="btn btn-danger"><b>Logout</b></button>
+                
+                <button type="submit" class="btn-danger">Logout</button>
             </form>
         <div class="todo-app">
 

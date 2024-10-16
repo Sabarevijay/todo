@@ -49,5 +49,19 @@ public function logout()
         Auth::logout();
         return redirect()->route('admin.login'); // Redirect to the login page
     }
+public function admin()
+    { 
+        $users = User::all();
+        return view('admin.auth.admin',['users' => $users]);
+    }
+
+    public function destroy($id)
+    {
+       
+        $user = User::findOrFail($id);
+        $user->delete();
+        return redirect()->route('admin.admin')->with('success', 'User deleted successfully');
+    }
+    
 
 }
