@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.user-container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#beb0a7,#eb916e );
+    padding: 10px;
+}
+.users{
+    width: 100%;
+    max-width: 1400px;
+    background: #ffffff;
+    /* margin: 100px auto 20px; */
+    margin-top: 50px;
+    margin-left:12%;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+    border: black solid 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.user-container h2{
+    margin-left: 20%;
+    max-width: 60%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    background-color: #ff5945;
+    padding: 15px;
+    border-radius: 18px;
+    border: black solid 1px;
+}
+.user-table{
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 0 auto; 
+    padding: 10px;
+
+}
+.back{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    width:100px;
+    margin-top: 15px;
+    background: #c94334;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: black solid 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.back:hover{
+    background: #80332c;
+}
+/* .table-row{
+     border: 1px solid black; 
+    padding: 10px;
+    text-align: center;
+} */
+
+.user-table th{
+    border: 1px solid white; 
+    color: white;
+    background-color: rgb(61, 91, 223);
+    padding: 15px;
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* border-radius: 10px; */
+}
+
+.data td{
+    border: 1px solid black; 
+    padding: 10px;
+    text-align: center;
+}
+.del{
+    padding: 5px;
+    width:100px;
+    background: #ff5945;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    border: black solid 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    
+}
+.del:hover{
+    background: #80332c;
+    }
